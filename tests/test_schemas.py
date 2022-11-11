@@ -52,6 +52,7 @@ def test_invalid_account_costumer(custom_costumer):
     else:
         assert False
 
+
 def test_invalid_bank_branch_costumer(custom_costumer):
     try:
         test_costumer = custom_costumer
