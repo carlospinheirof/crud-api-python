@@ -1,0 +1,13 @@
+version: '3'
+services:
+  fastapi:
+      build:
+        dockerfile: fastapi.dockerfile
+        context: .
+      image: carlospinheirof/fastapi
+      container_name: fastapi
+      command: uvicorn app.main:app --reload
+      volumes: 
+        - .:/app
+      ports:
+        - "8000:8000"
